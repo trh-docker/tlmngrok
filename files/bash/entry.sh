@@ -3,5 +3,5 @@
 cd ~
 ngrok authtoken $NGROK_API_KEY
 cd /opt/tlmngrok
-caddystart start &
+caddy -conf /opt/caddy/Caddyfile  &
 ngrok http 0.0.0.0:80 
