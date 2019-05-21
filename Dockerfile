@@ -4,7 +4,7 @@ FROM quay.io/spivegin/tlmcaddy
 # created by oyoshi
 
 
-RUN mkdir /opt/tlm/ /opt/bin /opt/dumb_init/
+RUN mkdir /opt/tlm/ /opt/dumb_init/
 
 
 ADD ./files/bash/entry.sh /opt/config/entry.sh
