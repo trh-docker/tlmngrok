@@ -2,3 +2,7 @@
     tls off
     proxy / {$TLM_FORWARD} 
 }
+0.0.0.0:8080 {
+    tls off
+    proxy / 127.0.0.1:4040 
+}
