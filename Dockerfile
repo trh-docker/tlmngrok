@@ -20,6 +20,7 @@ RUN dpkg -i /opt/dumb_init/dumb-init_1.2.0_amd64.deb && \
     chmod +x /opt/bin/ngrok &&\
     ln -s /opt/bin/ngrok /bin/ngrok &&\
     chmod +x /opt/config/entry.sh &&\
+    apt update && apt upgrade &&\
     apt-get autoclean && apt-get autoremove &&\
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
