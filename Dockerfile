@@ -23,7 +23,7 @@ RUN dpkg -i /opt/dumb_init/dumb-init_1.2.0_amd64.deb && \
     apt-get autoclean && apt-get autoremove &&\
     rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
-WORKDIR /opt/tlmnngrok
+WORKDIR /root/
 
 ENV NGROK_API_KEY=enterYourAPIKey \
     TLM_FORWARD=host:port \
